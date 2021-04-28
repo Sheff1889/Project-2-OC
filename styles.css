@@ -1,0 +1,797 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+/* Navbar */
+
+.nav-header {
+  margin: 1.5em 1.5em 0 1.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-header img {
+  margin-top: -1em;
+}
+
+.sign-up {
+  padding-top: 1em;
+
+  color: #0065fc;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-ul {
+  display: flex;
+  color: #0065fc;
+  justify-content: space-between;
+}
+
+.nav-link-aa,
+.nav-link-ac {
+  position: relative;
+  justify-content: space-between;
+  text-decoration: none;
+  color: black;
+
+  margin: 0 4em 0 2em;
+}
+
+.nav-link-aa:hover:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -40px;
+  width: 12.5em;
+  height: 92%;
+  color: #0065fc;
+  padding-bottom: 0.65em;
+  border-bottom: 4px solid #0065fc;
+}
+
+.nav-link-ac:hover:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -3.6em;
+  width: 14em;
+  height: 92%;
+  color: #0065fc;
+  padding-bottom: 0.65em;
+  border-bottom: 4px solid #0065fc;
+}
+
+.nav-link-aa:hover {
+  color: #0065fc;
+}
+
+.nav-link-ac:hover {
+  color: #0065fc;
+}
+
+.hr-nav {
+  display: flex;
+  height: 1.3em;
+}
+
+.nav-link-hidden {
+  display: none;
+}
+
+/* **************  under 600px navbar ****************/
+
+.btn-nav {
+  display: block;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+button {
+  display: block;
+  width: 100%;
+  outline: none;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+#b {
+  content: "";
+  position: relative;
+  top: -2.3em;
+  left: 100%;
+}
+
+#a {
+  padding-bottom: 1em;
+  border-bottom: 4px solid gray;
+}
+
+#b {
+  padding-bottom: 1em;
+  border-bottom: 4px solid gray;
+}
+
+#a:hover {
+  border-bottom: 4px solid #0065fc;
+}
+
+#b:hover {
+  border-bottom: 4px solid #0065fc;
+}
+
+/* Section-1 */
+
+section {
+  margin: 2em;
+}
+
+.icon {
+  padding: 1.1em;
+}
+
+.fa-map-marker {
+  background: rgb(240, 239, 239);
+  border-radius: 12px 0 0 12px;
+}
+
+.fa-search {
+  background-color: #0065fc;
+  color: white;
+  border-radius: 12px;
+}
+
+input::placeholder {
+  font-size: 1.1rem;
+  padding-left: 1em;
+  font-weight: bold;
+  color: black;
+  border: none;
+}
+input {
+  border: 0;
+  z-index: -2;
+}
+
+.form {
+  position: relative;
+  display: flex;
+}
+.form:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 30px;
+  width: 12.4em;
+  height: 92%;
+  border-top: 2px solid rgb(240, 239, 239);
+  border-bottom: 2px solid rgb(240, 239, 239);
+  z-index: -1;
+}
+
+/************Filters **************/
+
+.flex-stats {
+  display: flex;
+  align-items: center;
+  margin-right: 2em;
+}
+
+.filter-icons {
+  display: inline-block;
+  margin-right: 0.5em;
+  background-color: rgb(166, 221, 246);
+  color: #0065fc;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  font-size: 1.2em;
+}
+
+.fitler-lc-r {
+  display: flex;
+}
+
+.flex-stats_R {
+  margin-left: 1em;
+}
+
+.flex-stats {
+  position: relative;
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.flex-stats p {
+  font-weight: bold;
+}
+
+.flex-stats::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  border-radius: 30px;
+  width: 8.5em;
+  height: 82%;
+  border: 3px solid rgb(219, 214, 214);
+}
+.flex-stats_R::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  border-radius: 30px;
+  width: 9em;
+  height: 82%;
+  border: 3px solid rgb(219, 214, 214);
+}
+.flex-stats_FF::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  border-radius: 30px;
+  width: 11em;
+  height: 82%;
+  border: 3px solid rgb(219, 214, 214);
+}
+.flex-stats_PA::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  border-radius: 30px;
+  width: 13em;
+  height: 82%;
+  border: 3px solid rgb(219, 214, 214);
+}
+
+.flex-stats p {
+  white-space: nowrap;
+}
+
+.filter-hidden-mobile {
+  display: none;
+}
+
+/* ******************** info icon/text *******************/
+
+.info-flex {
+  display: flex;
+}
+.filter-item-1 {
+  margin-top: 1em;
+}
+.fa-info-circle {
+  margin-right: 5px;
+  border: 1px solid rgb(219, 214, 214);
+  border-radius: 100%;
+  background-color: #0065fc;
+  color: white;
+}
+
+#info-flex-p {
+  max-width: 390px;
+  display: block;
+}
+
+/********** Most Popular ********/
+
+.aside-bg-container {
+  background-color: rgb(219, 214, 214);
+  padding: 0 2em 1em 2em;
+}
+
+.flex-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.fa-chart-line {
+  font-size: 1.2em;
+}
+
+.aside-accom {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 1em;
+
+  border-radius: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-aside img {
+  float: left;
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.image {
+  max-width: 100%;
+
+  border-radius: 10px 0 0 10px;
+  /* padding-left: 5px;
+  padding-right: -11px;
+  padding-top: 2px; */
+}
+
+.image-aside {
+  width: 40%;
+  margin: 0.4em;
+  /* align-items: center;
+  justify-content: center; */
+  object-fit: contain;
+}
+
+.aside-flex {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  margin-left: 1em;
+}
+
+.aside-heading {
+  font-size: 1em;
+  /* white-space: nowrap; */
+}
+
+.aside-text p {
+  font-size: 0.9em;
+}
+
+.sun-hotel-p {
+  margin-top: 2em;
+}
+
+.item-rating {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.item-star {
+  color: #0065fc;
+}
+
+.item-star-grey {
+  color: rgb(219, 214, 214);
+}
+
+.fa-star {
+  font-size: 12px;
+}
+
+/*************** Accommodations  **************/
+
+.container-main {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  height: 11em;
+  padding: 0.2em;
+  border-radius: 25px;
+  box-shadow: 1px 1px 10px rgb(172 167 167);
+  margin-bottom: 1em;
+}
+
+.image-accom img {
+  border-radius: 25px 25px 0 0;
+  height: 6.5em;
+  width: 100%;
+  object-fit: cover;
+}
+
+.accom-text {
+  display: inline-block;
+  margin: -28px 0px -12px 12px;
+}
+
+.accom-text h3 {
+  margin: 1.8em 0px -0.8em 0px;
+  font-size: 1em;
+}
+
+.accom-rating {
+  margin-left: 12px;
+  margin-bottom: -14px;
+}
+
+.ac-star {
+  margin-left: 0.8em;
+}
+/********** Activities in Marseille ***********/
+
+.Marseille-image-text {
+  border-radius: 25px;
+}
+
+.MA-image-text-container {
+  border-radius: 25px;
+  box-shadow: 1px 1px 10px rgb(172 167 167);
+  margin-bottom: 1.2em;
+}
+
+.Marseille-image-text img {
+  border-radius: 25px 25px 0 0;
+  height: 8em;
+  width: 100%;
+  object-fit: cover;
+}
+
+.Marseille-image-text h4 {
+  margin: 0em 1em 1em 1em;
+  padding: 0.4em;
+  padding-bottom: 1em;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/********* Footer *********/
+
+.footer {
+  background-color: rgb(219, 214, 214);
+}
+
+.footer-flex {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 2em 2em 0em;
+}
+
+.footer-flex ul {
+  list-style-type: none;
+}
+
+.footer-flex ul li {
+  line-height: 1.6em;
+}
+
+.li-bold {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+/* ******************************************************************** */
+
+@media (min-width: 450px) {
+  .city {
+    display: block;
+  }
+}
+
+/* ******************************************************************** */
+
+@media (min-width: 600px) {
+  /********** nav ***********/
+
+  .nav-flex-a {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .nav-link-hidden {
+    display: block;
+    text-decoration: none;
+    color: black;
+
+    margin-right: 5em;
+  }
+
+  .nav-link-hidden:hover {
+    color: blue;
+    border-top: 2px solid blue;
+    padding-top: 0.9em;
+  }
+
+  .nav-header img {
+    margin-top: -0.2em;
+  }
+
+  .hr-nav,
+  .nav-options,
+  .nav-ul {
+    display: none;
+  }
+
+  .btn-nav {
+    display: none;
+  }
+
+  /* gird accom */
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 1em;
+  }
+
+  .container-accom {
+    background-color: rgb(219, 214, 214);
+    padding: 2em 3.4em 2em 2em;
+    border-radius: 25px;
+  }
+
+  .grid-main {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+/* ****************************************************************** */
+
+@media (min-width: 900px) {
+  /******** Filter  *********/
+
+  .flexbox-container {
+    display: flex;
+  }
+
+  .Filter--p {
+    margin-right: 2em;
+  }
+
+  .filter-wrap {
+    display: flex;
+  }
+
+  .fitler-lc-r {
+    display: none;
+  }
+
+  .flex-stats_FF {
+    padding-left: 1.8em;
+    padding-right: 1em;
+  }
+
+  .filter-hidden-mobile {
+    display: flex;
+  }
+
+  .flex-stats_LC {
+    order: -1;
+  }
+  .flex-stats_FF {
+    order: 0;
+  }
+  .flex-stats_R {
+    padding: 0 2em 0 0;
+    order: 3;
+  }
+  .flex-stats_PA {
+    order: 4;
+  }
+
+  /* ******* MP & Accom Grid ********** */
+
+  /* .container-MP-Accom {
+    display: flex;
+    margin-left: 2em;
+  } */
+
+  /****** grid accom ******* */
+  .grid-container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 1em;
+  }
+
+  .aside-bg-container {
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 25px;
+  }
+
+  /* ***********grid Activities in Marseille ********** */
+
+  .Marseille-image-text {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 2em;
+  }
+
+  /* ************* Footer  *************/
+
+  .footer-flex {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer-flex ul {
+    margin-right: 12em;
+  }
+}
+
+/* ************* */
+
+@media (min-width: 1100px) {
+  /* ******* MP & Accom Grid ********** */
+
+  .container-MP-Accom {
+    display: flex;
+    margin-left: 2em;
+  }
+
+  .aside-bg-container {
+    width: 200%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-right: 3em;
+    margin-left: -2.5em;
+
+    border-radius: 25px;
+    order: -1;
+  }
+
+  .container-accom {
+    background-color: rgb(219, 214, 214);
+    padding: 2em 3.4em 2em 2em;
+    margin-left: 0em;
+    border-radius: 25px;
+    width: 80%;
+  }
+
+  .grid-main {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #order-MP {
+    order: 1;
+  }
+
+  #order-Accom {
+    order: -1;
+  }
+}
+
+@media (min-width: 1300px) {
+  .Marseille-image-text {
+    display: grid;
+    height: 60vh;
+    grid-template-areas:
+      "grid-image-1 grid-image-2 grid-image-4 grid-image-5"
+      "grid-image-1 grid-image-2 grid-image-4 grid-image-5"
+      "grid-image-1 grid-image-2 grid-image-4 grid-image-5"
+      "grid-image-1 grid-image-2 grid-image-4 grid-image-5"
+      "grid-image-1 grid-image-2 grid-image-4 grid-image-6"
+      "grid-image-1 grid-image-2 grid-image-4 grid-image-6"
+      "grid-image-1 grid-image-3 grid-image-4 grid-image-6"
+      "grid-image-1 grid-image-3 grid-image-4 grid-image-6"
+      "grid-image-1 grid-image-3 grid-image-4 grid-image-6"
+      "grid-image-1 grid-image-3 grid-image-4 grid-image-6";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-gap: 1.5em;
+  }
+
+  .image-third img {
+    /*  max-width: 100%;
+  height: auto; */
+    box-shadow: 1px 1px 10px rgb(172, 167, 167);
+    border-radius: 25px;
+  }
+
+  .third-section-grid {
+    border-radius: 25px;
+    box-shadow: 1px 1px 10px rgb(172, 167, 167);
+  }
+
+  .third-section h2 {
+    margin-bottom: 1.2em;
+  }
+
+  .grid-item-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 10;
+    background-image: url("../assets/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    /* background-image: url("../assets/Reservia ressources EN/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"); */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    /*  height: 400px; */
+  }
+
+  /* hides imgs over 1300px */
+  .MA-image-text-container img {
+    display: none;
+  }
+
+  .Marseille-image-text h4 {
+    position: absolute;
+    bottom: -20px;
+    left: -1em;
+    right: 0;
+    max-width: 0 auto;
+    padding: 0.8em;
+    border-radius: 0 0 25px 25px;
+    /* margin-left: auto;
+  margin-right: auto; */
+
+    background-color: #fafafa;
+  }
+
+  .grid-item-2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 6;
+    background-image: url("../images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .grid-item-3 {
+    grid-column: 2 / 3;
+    grid-row: 6 / 10;
+    background-image: url("../images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .grid-item-4 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 10;
+
+    background-image: url("../assets/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .image-text {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    padding: 0.8em;
+    /* margin-left: auto;
+  margin-right: auto; */
+
+    background-color: #fafafa;
+  }
+
+  .grid-item-5 {
+    grid-column: 4 / 5;
+    grid-row: 1 / 5;
+    background-image: url("../assets/images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .grid-item-6 {
+    grid-column: 4 / 5;
+    grid-row: 5 / 10;
+    background-image: url("../assets/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .card__image {
+    width: 100%;
+
+    height: 500px;
+    object-fit: cover !important;
+    border-radius: 25px 25px 0 0;
+    box-shadow: 1px 1px 10px rgb(172, 167, 167);
+  }
+}
