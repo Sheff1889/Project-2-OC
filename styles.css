@@ -27,59 +27,6 @@ body {
   text-decoration: none;
 }
 
-.nav-ul {
-  display: flex;
-  color: #0065fc;
-  justify-content: space-between;
-}
-
-.nav-link-aa,
-.nav-link-ac {
-  position: relative;
-  justify-content: space-between;
-  text-decoration: none;
-  color: black;
-
-  margin: 0 4em 0 2em;
-}
-
-.nav-link-aa:hover:before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: -40px;
-  width: 12.5em;
-  height: 92%;
-  color: #0065fc;
-  padding-bottom: 0.65em;
-  border-bottom: 4px solid #0065fc;
-}
-
-.nav-link-ac:hover:before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: -3.6em;
-  width: 14em;
-  height: 92%;
-  color: #0065fc;
-  padding-bottom: 0.65em;
-  border-bottom: 4px solid #0065fc;
-}
-
-.nav-link-aa:hover {
-  color: #0065fc;
-}
-
-.nav-link-ac:hover {
-  color: #0065fc;
-}
-
-.hr-nav {
-  display: flex;
-  height: 1.3em;
-}
-
 .nav-link-hidden {
   display: none;
 }
@@ -88,16 +35,16 @@ body {
 
 .btn-nav {
   display: block;
-  position: relative;
-  align-items: center;
-  justify-content: center;
+  /* position: relative; */
+  /*  align-items: center; */
+  /* justify-content: center; */
   width: 50%;
 }
 
 button {
-  display: block;
+  display: flex;
   width: 100%;
-  outline: none;
+  /* outline: none; */
   border: none;
   align-items: center;
   justify-content: center;
@@ -108,18 +55,20 @@ button {
 #b {
   content: "";
   position: relative;
+  /* pushes the Activites to the same hight as the Accomodations  */
   top: -2.3em;
+  /* pushes the 'Activites'(which is over the Accommodations button) from  the right to the left */
   left: 100%;
 }
 
 #a {
   padding-bottom: 1em;
-  border-bottom: 4px solid gray;
+  border-bottom: 4px solid #f2f2f2;
 }
 
 #b {
   padding-bottom: 1em;
-  border-bottom: 4px solid gray;
+  border-bottom: 4px solid #f2f2f2;
 }
 
 #a:hover {
@@ -141,7 +90,7 @@ section {
 }
 
 .fa-map-marker {
-  background: rgb(240, 239, 239);
+  background: #f2f2f2;
   border-radius: 12px 0 0 12px;
 }
 
@@ -151,16 +100,30 @@ section {
   border-radius: 12px;
 }
 
+/* only visible above 900px */
+.search-button {
+  display: none;
+}
+
 input::placeholder {
-  font-size: 1.1rem;
-  padding-left: 1em;
+  font-size: 1.05rem;
+
   font-weight: bold;
   color: black;
   border: none;
 }
+
+input[type="text"] {
+  font-size: 1.05rem;
+  font-weight: bold;
+}
+
 input {
   border: 0;
-  z-index: -2;
+  margin: 0.3em;
+  padding-left: 1em;
+  outline: none;
+  z-index: 2;
 }
 
 .form {
@@ -172,10 +135,10 @@ input {
   position: absolute;
   top: 0px;
   left: 30px;
-  width: 12.4em;
+  width: 18.4em;
   height: 92%;
-  border-top: 2px solid rgb(240, 239, 239);
-  border-bottom: 2px solid rgb(240, 239, 239);
+  border-top: 2px solid #f2f2f2;
+  border-bottom: 2px solid #f2f2f2;
   z-index: -1;
 }
 
@@ -190,7 +153,7 @@ input {
 .filter-icons {
   display: inline-block;
   margin-right: 0.5em;
-  background-color: rgb(166, 221, 246);
+  background-color: #deebff;
   color: #0065fc;
   border-radius: 50%;
   width: 20px;
@@ -226,7 +189,7 @@ input {
   border-radius: 30px;
   width: 8.5em;
   height: 82%;
-  border: 3px solid rgb(219, 214, 214);
+  border: 3px solid #f2f2f2;
 }
 .flex-stats_R::before {
   content: "";
@@ -235,7 +198,7 @@ input {
   border-radius: 30px;
   width: 9em;
   height: 82%;
-  border: 3px solid rgb(219, 214, 214);
+  border: 3px solid #f2f2f2;
 }
 .flex-stats_FF::before {
   content: "";
@@ -244,7 +207,7 @@ input {
   border-radius: 30px;
   width: 11em;
   height: 82%;
-  border: 3px solid rgb(219, 214, 214);
+  border: 3px solid #f2f2f2;
 }
 .flex-stats_PA::before {
   content: "";
@@ -253,7 +216,7 @@ input {
   border-radius: 30px;
   width: 13em;
   height: 82%;
-  border: 3px solid rgb(219, 214, 214);
+  border: 3px solid #f2f2f2;
 }
 
 .flex-stats p {
@@ -274,7 +237,7 @@ input {
 }
 .fa-info-circle {
   margin-right: 5px;
-  border: 1px solid rgb(219, 214, 214);
+  border: 1px solid #f2f2f2;
   border-radius: 100%;
   background-color: #0065fc;
   color: white;
@@ -288,7 +251,7 @@ input {
 /********** Most Popular ********/
 
 .aside-bg-container {
-  background-color: rgb(219, 214, 214);
+  background-color: #f2f2f2;
   padding: 0 2em 1em 2em;
 }
 
@@ -403,6 +366,12 @@ img {
   margin: -28px 0px -12px 12px;
 }
 
+.accom-text p {
+  font-weight: bold;
+  font-size: 0.85rem;
+  padding-top: 0.3em;
+}
+
 .accom-text h3 {
   margin: 1.8em 0px -0.8em 0px;
   font-size: 1em;
@@ -415,6 +384,10 @@ img {
 
 .ac-star {
   margin-left: 0.8em;
+}
+
+.show {
+  padding-top: 1em;
 }
 /********** Activities in Marseille ***********/
 
@@ -446,7 +419,7 @@ img {
 /********* Footer *********/
 
 .footer {
-  background-color: rgb(219, 214, 214);
+  background-color: #f2f2f2;
 }
 
 .footer-flex {
@@ -504,12 +477,12 @@ img {
     margin-top: -0.2em;
   }
 
-  .hr-nav,
+  /* .hr-nav,
   .nav-options,
   .nav-ul {
     display: none;
   }
-
+ */
   .btn-nav {
     display: none;
   }
@@ -523,7 +496,7 @@ img {
   }
 
   .container-accom {
-    background-color: rgb(219, 214, 214);
+    background-color: #f2f2f2;
     padding: 2em 3.4em 2em 2em;
     border-radius: 25px;
   }
@@ -537,6 +510,21 @@ img {
 /* ****************************************************************** */
 
 @media (min-width: 900px) {
+  /* *****search bar text */
+
+  .fa-search {
+    display: none;
+  }
+
+  .search-button {
+    display: inline-block;
+    background-color: #0065fc;
+    color: white;
+    border-radius: 0 18px 18px 0;
+    width: 6em;
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
   /******** Filter  *********/
 
   .flexbox-container {
@@ -635,14 +623,14 @@ img {
     margin-bottom: 2em;
     margin-right: 3em;
     margin-left: -2.5em;
-
+    padding-top: 1em;
     border-radius: 25px;
     order: -1;
   }
 
   .container-accom {
-    background-color: rgb(219, 214, 214);
-    padding: 2em 3.4em 2em 2em;
+    background-color: #f2f2f2;
+    padding: 1em 4em 3em 2em;
     margin-left: 0em;
     border-radius: 25px;
     width: 80%;
@@ -683,8 +671,6 @@ img {
   }
 
   .image-third img {
-    /*  max-width: 100%;
-  height: auto; */
     box-shadow: 1px 1px 10px rgb(172, 167, 167);
     border-radius: 25px;
   }
@@ -702,7 +688,6 @@ img {
     grid-column: 1 / 2;
     grid-row: 1 / 10;
     background-image: url("../assets/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
-    /* background-image: url("../assets/Reservia ressources EN/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"); */
     background-size: cover;
     background-position: center;
     position: relative;
@@ -719,11 +704,8 @@ img {
     bottom: -20px;
     left: -1em;
     right: -1em;
-    /*  max-width: 0 auto; */
     padding: 0.8em;
     border-radius: 0 0 25px 25px;
-    /* margin-left: auto;
-  margin-right: auto; */
 
     background-color: #fafafa;
   }
@@ -762,9 +744,6 @@ img {
     left: 0;
     right: 0;
     padding: 0.8em;
-    /* margin-left: auto;
-  margin-right: auto; */
-
     background-color: #fafafa;
   }
 
